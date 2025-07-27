@@ -11,9 +11,10 @@ const PORT = process.env.PORT || 3000; // ✅ Important pour Render
 
 // Middleware
 app.use(helmet());
+
+// CORS - Ajoutez votre domaine GitHub Pages
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://votre-username.github.io'], // ✅ Ajoutez votre domaine GitHub Pages
-  credentials: true
+  origin: ['http://localhost:3000', 'https://coljurten.github.io'], 
 }));
 app.use(morgan('combined'));
 app.use(express.json());
