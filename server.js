@@ -34,7 +34,7 @@ const swaggerOptions = {
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerOptions));
 
 // Routes
-app.use('/api/v1/blagues', require('./routes/blagues'));
+app.use('/api/v1/blagues', require('./routes/blagueRoutes'));
 
 // Route de health check pour Render
 app.get('/health', (req, res) => {
