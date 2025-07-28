@@ -16,7 +16,6 @@ const options = {
       }
     ]
   },
-  // SOLUTION: Chemin absolu depuis la racine du projet
   apis: [path.join(__dirname, '../routes/*.js')]
 };
 
